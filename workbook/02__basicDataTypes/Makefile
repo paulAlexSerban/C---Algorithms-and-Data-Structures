@@ -1,10 +1,12 @@
+PROGRAM_NAME = "basicDataTypes"
+
 compile:
-	@gcc -fdiagnostics-color=always -g source/basicDataTypes.c -o dist/basicDataTypes.exe
-	@echo 'compiling ...'
+	@gcc -fdiagnostics-color=always -g source/${PROGRAM_NAME}.c -o dist/${PROGRAM_NAME}.exe
+	@echo 'compiling ${PROGRAM_NAME} ...'
 
 run:
 	@echo 'running ...'
-	@./dist/basicDataTypes.exe
+	@./dist/${PROGRAM_NAME}.exe
 
 build: compile run
 	
